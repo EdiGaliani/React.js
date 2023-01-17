@@ -11,7 +11,21 @@
 
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+
+        const root = document.querySelector("#root");
+
+        const page = () => {
+            return <div>
+                    <h1 id="Título Principal">Hello World - Page</h1>
+                    <h2 id="Título Secundario">How are you know?</h2>
+                </div>
+        }
+
+        ReactDOM.render(page(), root);
+    </script>
 </body>
 
 </html>
